@@ -36,7 +36,7 @@ const ProjectsSection = () => {
           Projects
         </h3>
         <p className="text-muted-foreground mb-12 font-mono text-sm">
-          // More projects coming soon — tell me which ones to feature!
+          // More projects coming soon!
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6">

@@ -1,6 +1,7 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -32,7 +33,15 @@ const HeroSection = () => {
             <Github size={24} />
           </a>
           <a
-            href="#contact"
+            href="https://www.linkedin.com/in/sanyukta-nevasekar-269600335/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors duration-200"
+          >
+            <Linkedin size={24} />
+          </a>
+          <a
+            href="mailto:sanyuktanevasekar@gmail.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-200"
           >
             <Mail size={24} />
