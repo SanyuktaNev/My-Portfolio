@@ -1,35 +1,29 @@
-import { Github, ExternalLink, FolderGit2 } from "lucide-react";
+import { Github, FolderGit2 } from "lucide-react";
 
 const projects = [
   {
-    title: "Jarvis",
-    description: "A JavaScript-based virtual assistant project inspired by Iron Man's JARVIS AI, featuring voice commands and interactive responses.",
-    tech: ["JavaScript"],
-    github: "https://github.com/SanyuktaNev/Jarvis",
+    title: "Flask Blog",
+    description: "A fully authenticated and robust backend blog application built with Flask, featuring user registration, login, CRUD operations, and secure session management.",
+    tech: ["Python", "Flask"],
+    github: "https://github.com/SanyuktaNev/FLASK",
   },
   {
     title: "Trading Bot",
-    description: "An automated trading bot built with Python for executing trading strategies in financial markets with real-time data analysis.",
+    description: "A Binance testnet trading bot built in Python for executing automated trading strategies with real-time market data analysis.",
     tech: ["Python"],
     github: "https://github.com/SanyuktaNev/trading_bot",
   },
   {
-    title: "Flask Practice",
-    description: "Web applications built using Python Flask framework, demonstrating backend development, routing, and template rendering.",
+    title: "Task Manager API",
+    description: "A RESTful task manager API built with Flask featuring full CRUD operations, role-based access control (RBAC), and database integration.",
     tech: ["Python", "Flask"],
-    github: "https://github.com/SanyuktaNev/flask-practice",
+    github: "https://github.com/SanyuktaNev/task_manager_api",
   },
   {
-    title: "Python Text-to-Speech",
-    description: "A Python application that converts text into natural-sounding speech using text-to-speech libraries and APIs.",
-    tech: ["Python"],
-    github: "https://github.com/SanyuktaNev/Python-Text-to-Speech",
-  },
-  {
-    title: "Google Clone",
-    description: "A front-end clone of Google's homepage built with HTML and CSS, demonstrating responsive design and pixel-perfect UI replication.",
-    tech: ["HTML", "CSS"],
-    github: "https://github.com/SanyuktaNev/HTML-CSS-Google-Clone",
+    title: "Field-Based CRM Management App",
+    description: "A comprehensive field-based CRM management application built with Flutter for managing customer relationships, field operations, and business workflows on mobile.",
+    tech: ["Flutter", "Firebase"],
+    github: "https://github.com/SanyuktaNev",
   },
 ];
 
@@ -45,7 +39,7 @@ const ProjectsSection = () => {
           // More projects coming soon — tell me which ones to feature!
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
