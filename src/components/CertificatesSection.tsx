@@ -26,7 +26,7 @@ const certificates = [
     title: "Python Full Stack Developer Virtual Internship",
     issuer: "AICTE & EduSkills Academy",
     date: "Oct – Dec 2024",
-    description: "10-week virtual internship program focusing on Python full-stack development, supported by the National Internship Portal.",
+    description: "10-week virtual internship program focusing on Python full-stack development with Flask, supported by the National Internship Portal.",
     pdf: "/certificates/python-fullstack-internship.pdf",
   },
   {

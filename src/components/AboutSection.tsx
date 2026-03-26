@@ -1,10 +1,16 @@
-import { Shield, Code, Database, Terminal } from "lucide-react";
+import { Shield, Code, Database, Terminal, Smartphone, Server } from "lucide-react";
 
 const skills = [
-  { icon: Code, label: "Python, C, C++, JavaScript" },
+  { icon: Code, label: "Python, C++, Java" },
   { icon: Shield, label: "Cybersecurity Fundamentals" },
-  { icon: Database, label: "Django, Flask, Full Stack" },
+  { icon: Smartphone, label: "Flutter App Development" },
+  { icon: Server, label: "Flask, Firebase" },
+  { icon: Database, label: "SQL & Databases" },
   { icon: Terminal, label: "DSA & Problem Solving" },
+];
+
+const techStack = [
+  "Python", "C++", "Java", "Flutter", "Flask", "Firebase", "SQL",
 ];
 
 const AboutSection = () => {
@@ -21,7 +27,7 @@ const AboutSection = () => {
             <p className="text-secondary-foreground leading-relaxed mb-6">
               I'm Sanyukta Nevasekar, a passionate software developer and cybersecurity enthusiast
               currently pursuing my education at Pimpri Chinchwad College of Engineering & Research.
-              I specialize in Python full-stack development with expertise in Django and Flask frameworks.
+              I'm experienced in Flutter app development and Python full-stack development with Flask.
             </p>
             <p className="text-secondary-foreground leading-relaxed">
               With a strong foundation in data structures & algorithms and a keen interest in
@@ -40,6 +46,21 @@ const AboutSection = () => {
                 <skill.icon className="text-primary mb-3" size={24} />
                 <p className="font-mono text-sm text-card-foreground">{skill.label}</p>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="mt-16">
+          <h4 className="font-mono text-primary text-sm mb-6">&gt; tech_stack</h4>
+          <div className="flex flex-wrap gap-3">
+            {techStack.map((tech) => (
+              <span
+                key={tech}
+                className="font-mono text-sm text-foreground bg-primary/10 border border-primary/20 px-4 py-2 rounded-lg hover:border-primary/50 transition-colors"
+              >
+                {tech}
+              </span>
             ))}
           </div>
         </div>
