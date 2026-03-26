@@ -1,4 +1,4 @@
-import { Github, Mail, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -13,7 +13,7 @@ const ContactSection = () => {
           Feel free to reach out!
         </p>
 
-        <div className="flex items-center justify-center gap-6">
+        <div className="flex items-center justify-center gap-6 flex-wrap">
           <a
             href="https://github.com/SanyuktaNev"
             target="_blank"
@@ -22,6 +22,22 @@ const ContactSection = () => {
           >
             <Github size={18} />
             GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sanyukta-nevasekar-269600335/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-card border border-border rounded-lg px-6 py-3 font-mono text-sm text-foreground hover:text-primary hover:border-primary/50 transition-all card-glow-hover"
+          >
+            <Linkedin size={18} />
+            LinkedIn
+          </a>
+          <a
+            href="mailto:sanyuktanevasekar@gmail.com"
+            className="flex items-center gap-2 bg-card border border-border rounded-lg px-6 py-3 font-mono text-sm text-foreground hover:text-primary hover:border-primary/50 transition-all card-glow-hover"
+          >
+            <Mail size={18} />
+            Email
           </a>
         </div>
 
